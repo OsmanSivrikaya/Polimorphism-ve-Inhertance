@@ -8,3 +8,13 @@ C:\Users\osman\source\repos\Ödev\Ödev\obj\Debug\Ödev.csproj.GenerateResource.
 C:\Users\osman\source\repos\Ödev\Ödev\obj\Debug\Ödev.csproj.CoreCompileInputs.cache
 C:\Users\osman\source\repos\Ödev\Ödev\obj\Debug\Ödev.exe
 C:\Users\osman\source\repos\Ödev\Ödev\obj\Debug\Ödev.pdb
+C:\Users\osman\Desktop\Polimorphism ve Inhertance\Ödev\bin\Debug\Ödev.exe.config
+C:\Users\osman\Desktop\Polimorphism ve Inhertance\Ödev\bin\Debug\Ödev.exe
+C:\Users\osman\Desktop\Polimorphism ve Inhertance\Ödev\bin\Debug\Ödev.pdb
+C:\Users\osman\Desktop\Polimorphism ve Inhertance\Ödev\obj\Debug\Ödev.csproj.AssemblyReference.cache
+C:\Users\osman\Desktop\Polimorphism ve Inhertance\Ödev\obj\Debug\Ödev.Form1.resources
+C:\Users\osman\Desktop\Polimorphism ve Inhertance\Ödev\obj\Debug\Ödev.Properties.Resources.resources
+C:\Users\osman\Desktop\Polimorphism ve Inhertance\Ödev\obj\Debug\Ödev.csproj.GenerateResource.cache
+C:\Users\osman\Desktop\Polimorphism ve Inhertance\Ödev\obj\Debug\Ödev.csproj.CoreCompileInputs.cache
+C:\Users\osman\Desktop\Polimorphism ve Inhertance\Ödev\obj\Debug\Ödev.exe
+C:\Users\osman\Desktop\Polimorphism ve Inhertance\Ödev\obj\Debug\Ödev.pdb
