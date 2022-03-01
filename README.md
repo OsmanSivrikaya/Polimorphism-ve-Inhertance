@@ -1,0 +1,1 @@
+Polimorphism ve Inhertance
