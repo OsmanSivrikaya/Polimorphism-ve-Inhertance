@@ -8,25 +8,22 @@ using System.Data;
 
 namespace Ödev
 {
-
+    
     public class Suppliers
     {
         public int UnitsInStock { get; set; }
         public int SupplersID { get; set; }
         public virtual void YeniKayitEkle()
         {
-            SqlConnection con = new SqlConnection("Data Source = OSMANSIVRIKAYA; Initial Catalog = Northwind; Integrated Security = True");
-            //con.ConnectionString = connection;
-            SqlDataAdapter adtr;
-            SqlCommand komut;
+            Connection con = new Connection();
             DataTable tablo = new DataTable();
             TelefonSatis ts = new TelefonSatis();
-            con.Open();
-            komut = new SqlCommand("spYeniKayıt", con);
-            komut.CommandType = CommandType.StoredProcedure;
-            komut.Parameters.AddWithValue("@OrderDate", DateTime.Now.ToString());
-            komut.ExecuteNonQuery();
-            con.Close();
+            con.con.Open();
+            con.komut = new SqlCommand("spYeniKayıt", con.con);
+            con.komut.CommandType = CommandType.StoredProcedure;
+            con.komut.Parameters.AddWithValue("@OrderDate", DateTime.Now.ToString());
+            con.komut.ExecuteNonQuery();
+            con.con.Close();
         }
         
     }
@@ -37,20 +34,18 @@ namespace Ödev
         public int CategoryID { get; set; }
         public override void YeniKayitEkle()
         {
-            SqlConnection con = new SqlConnection("Data Source=OSMANSIVRIKAYA;Initial Catalog=Northwind;Integrated Security=True");
-            SqlDataAdapter adtr;
-            SqlCommand komut;
+            Connection con = new Connection();
             DataTable tablo = new DataTable();
-            con.Open();
-            komut = new SqlCommand("psYeniKullaniciEkle", con);
-            komut.CommandType = CommandType.StoredProcedure;
-            komut.Parameters.AddWithValue("@ProductName", ProductName);
-            komut.Parameters.AddWithValue("@SupplierID", SupplersID);
-            komut.Parameters.AddWithValue("@CategoryID", CategoryID);
-            komut.Parameters.AddWithValue("@UnitsInStock", UnitsInStock);
-            komut.Parameters.AddWithValue("@UnitPrice", UnitPrice);
-            komut.ExecuteNonQuery();
-            con.Close();
+            con.con.Open();
+            con.komut = new SqlCommand("psYeniKullaniciEkle", con.con);
+            con.komut.CommandType = CommandType.StoredProcedure;
+            con.komut.Parameters.AddWithValue("@ProductName", ProductName);
+            con.komut.Parameters.AddWithValue("@SupplierID", SupplersID);
+            con.komut.Parameters.AddWithValue("@CategoryID", CategoryID);
+            con.komut.Parameters.AddWithValue("@UnitsInStock", UnitsInStock);
+            con.komut.Parameters.AddWithValue("@UnitPrice", UnitPrice);
+            con.komut.ExecuteNonQuery();
+            con.con.Close();
         }
        
     }

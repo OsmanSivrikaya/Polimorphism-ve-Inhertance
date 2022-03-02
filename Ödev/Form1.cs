@@ -14,9 +14,7 @@ namespace Ödev
 {
     public partial class Form1 : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=OSMANSIVRIKAYA;Initial Catalog=Northwind;Integrated Security=True");
-        SqlDataAdapter adtr;
-        SqlCommand komut;
+        Connection con = new Connection();
         DataTable tablo = new DataTable();
         public Form1()
         {
@@ -31,17 +29,17 @@ namespace Ödev
         public void KayitGoster()
         {
             tablo.Clear();
-            adtr = new SqlDataAdapter("spGoster", con);
-            adtr.Fill(tablo);
+            con.adtr = new SqlDataAdapter("spGoster", con.con);
+            con.adtr.Fill(tablo);
             dataGridView1.DataSource = tablo;
         }
         DataTable KayitGoster2()
         {
-            con.Open();
-            SqlDataAdapter adapter = new SqlDataAdapter("select * from Orders order by OrderID desc", con);
+            con.con.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter("select * from Orders order by OrderID desc", con.con);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
-            con.Close();
+            con.con.Close();
             return dt;
         }
 
